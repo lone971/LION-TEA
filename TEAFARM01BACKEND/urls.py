@@ -19,12 +19,13 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('api/users/', include('users.urls')),
-    #path('api/farms/', include('farm.urls')),
-    #path('disease_detection/', include('disease_detection.urls')),
-    #path('api/weather/', include('weather.urls')),
+    path('api/users/', include('users.urls')),
+    path('api/farms/', include('farm.urls')),
+    path('disease_detection/', include('disease_detection.urls')),
+    path('api/weather/', include('weather.urls')),
     #path('api/ecommerce/', include('ecommerce.urls')),
     #path('api/companies/', include('companies.urls')),
     #path('api/notifications/', include('notifications.urls')),
-    path('chat/', include('chat.urls')),
+    #path('chat/', include('chat.urls')),
+    path('api/drone',include('drone.urls')),
 ]
